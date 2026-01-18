@@ -3,7 +3,7 @@ cask "freight" do
   name "freight"
   desc "Freight is a zero-dependency Git hook orchestrator that replaces fragile scripts with a high-performance Go binary and a single, declarative JSON manifest."
   homepage "https://github.com/devbytes-cloud/freight"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "freight" do
     on_intel do
       url "https://github.com/devbytes-cloud/freight/releases/download/v#{version}/freight_Darwin_x86_64.tar.gz",
         verified: "github.com/devbytes-cloud/freight"
-      sha256 "ece0f94bf2b8317053168c4378ef7ec535b5e1e149cdfa919a201c8094ae9122"
+      sha256 "336958eb050a817fc806d9675107bc4aa359f0eb563b97955b0dcb6446ef99e9"
     end
     on_arm do
       url "https://github.com/devbytes-cloud/freight/releases/download/v#{version}/freight_Darwin_arm64.tar.gz",
         verified: "github.com/devbytes-cloud/freight"
-      sha256 "7ddf8b38999375192e7490c4020343b331e6c0bc6e61e0456d174f3be8fc2fe7"
+      sha256 "835ed741a1f614a02ec908149c8d1df7fe4009f33d67d83946e120e11ee22993"
     end
   end
 
@@ -28,12 +28,12 @@ cask "freight" do
     on_intel do
       url "https://github.com/devbytes-cloud/freight/releases/download/v#{version}/freight_Linux_x86_64.tar.gz",
         verified: "github.com/devbytes-cloud/freight"
-      sha256 "abbd7a12dc3faec02c88e07b4789a5d6d09f1cacbb0a7b4eefdee5c9f4204393"
+      sha256 "bb390a59929fe867a62d94f3e5c8600fddddc2b7dc8fc929a4d8edc7c552d42f"
     end
     on_arm do
       url "https://github.com/devbytes-cloud/freight/releases/download/v#{version}/freight_Linux_arm64.tar.gz",
         verified: "github.com/devbytes-cloud/freight"
-      sha256 "c83a3ada6bcab4a121a5210de94e0cef4e77c9636509eabdebad538f48003440"
+      sha256 "0d23d1f7ef7064bc10393fda6c93c23c15a163d6bdd7fe81ca040cee46c48ddd"
     end
   end
 
