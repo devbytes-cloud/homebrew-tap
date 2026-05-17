@@ -5,21 +5,21 @@
 class Conditioner < Formula
   desc "Conditioner plugin allows you to add, update, or remove conditions on Kubernetes nodes"
   homepage "https://github.com/devbytes-cloud/conditioner"
-  version "1.6.2"
+  version "1.6.3"
   license "Apache-2.0 license"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.2/conditioner_Darwin_x86_64.tar.gz"
-      sha256 "5e66bafaa4e3b6e52bb1361b861405a9125271d804906a36d35ee60ea56810c9"
+      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.3/conditioner_Darwin_x86_64.tar.gz"
+      sha256 "e1f53e9e4b3f4b818ac25965fe79b8d1fd834460071295a1a09d2fc825d23714"
 
       define_method(:install) do
         bin.install "kubectl-conditioner" => "conditioner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.2/conditioner_Darwin_arm64.tar.gz"
-      sha256 "5ca7744c79d6954002737fcec5fbecb3a9b0d26955838cb62de623847c16af2f"
+      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.3/conditioner_Darwin_arm64.tar.gz"
+      sha256 "8cfd183a9e8607a541d8cc9f489a357044034a37e31d31ac3cc9c47d5e29c9e0"
 
       define_method(:install) do
         bin.install "kubectl-conditioner" => "conditioner"
@@ -29,22 +29,22 @@ class Conditioner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.2/conditioner_Linux_x86_64.tar.gz"
-      sha256 "51dc8c0701d4d4dcddde7ab17529ca5a0c2bf47586f24d7693fa843a3bdc664a"
+      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.3/conditioner_Linux_x86_64.tar.gz"
+      sha256 "ba585f884985d47456177ee277908af03defdb2b59ca1d9ac776fca7ce9b0e61"
       define_method(:install) do
         bin.install "kubectl-conditioner" => "conditioner"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.2/conditioner_Linux_armv6.tar.gz"
-      sha256 "df0c2923ef098e56ab4fae6088bf99f2f36b5689d0e85558aabe4eb8ccea0364"
+      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.3/conditioner_Linux_armv6.tar.gz"
+      sha256 "dac4823da3618c65f1724cee34ab30c8100b04218c4d9ddf3b7be390f313cd56"
       define_method(:install) do
         bin.install "kubectl-conditioner" => "conditioner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.2/conditioner_Linux_arm64.tar.gz"
-      sha256 "f09b01266939b85aa98d332a2b39185002e1116bd1739d422985598f662bcafc"
+      url "https://github.com/devbytes-cloud/conditioner/releases/download/v1.6.3/conditioner_Linux_arm64.tar.gz"
+      sha256 "df0af7b1d4fcadfe518c524f2e91d3cce0db2a0f7c75caac15dc512974ceccbd"
       define_method(:install) do
         bin.install "kubectl-conditioner" => "conditioner"
       end
